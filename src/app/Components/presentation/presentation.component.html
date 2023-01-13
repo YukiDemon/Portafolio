@@ -2,30 +2,39 @@
     <div class="card-rotate">
         <div class="card-rotate-content">
             <div class="content">
-                <div class="front">
-                    <div class="front-img">
+                <div class="presentation" *ngIf="showPresentation" >
+                    <div class="presentation-img">
                         <img src="https://pps.whatsapp.net/v/t61.24694-24/310632916_195291112973880_4648648487090972676_n.jpg?ccb=11-4&oh=01_AdT1ddqYokXJQG-TTxnLPXtMWEaBQF8EyQ9aks9pKANL-g&oe=63C72525"
                             alt="Logo Programador CS" class="logo" />
                     </div>
-                    <div class="front-rigth">
-                        <div class="front-text">
+                    <div class="presentation-div-rigth">
+                        <div class="presentation-text">
                             <p>Bienvenido a mi portafolio</p>
                         </div>
-                        <div class="front-button">
-                            <button (click)="rotate()" pButton pRipple type="button" label="VER PERFIL"
+                        <div class="presentation-button">
+                            <button (click)="rotateCard()" pButton pRipple type="button" label="VER PERFIL"
                                 class="p-button-rounded p-button-secondary"></button>
                         </div>
                     </div>
                 </div>
-                <!-- <div class="back">
-                    <div class="back-info">
-                        <img src="https://pps.whatsapp.net/v/t61.24694-24/310632916_195291112973880_4648648487090972676_n.jpg?ccb=11-4&oh=01_AdT1ddqYokXJQG-TTxnLPXtMWEaBQF8EyQ9aks9pKANL-g&oe=63C72525"
+                <div class="detail" *ngIf="showDetail">
+                    <div class="detail-info">
+                        <div class="detail-img" >
+                            <img src="https://pps.whatsapp.net/v/t61.24694-24/310632916_195291112973880_4648648487090972676_n.jpg?ccb=11-4&oh=01_AdT1ddqYokXJQG-TTxnLPXtMWEaBQF8EyQ9aks9pKANL-g&oe=63C72525"
                             alt="Logo Programador CS" class="logo" />
-                        <h1>Software Developer Junior</h1>
-                        <p>Guillermo Campos V&aacute;squez</p>
-                        <button>Conoce m&aacute;s</button>
+                        </div>
+                        <div class="detail--div-rigth">
+                            <div class="detail-text">
+                                <h1>Software Developer Junior</h1>
+                                <p>Guillermo Campos V&aacute;squez</p>
+                            </div>
+                            <div class="detail-button">
+                                <button (click)="rotateCard()" pButton pRipple type="button" label="Conoce más"
+                                class="p-button-rounded p-button-secondary"></button>
+                            </div>
+                        </div>
                     </div>
-                </div> -->
+                </div>
             </div>
         </div>
     </div>

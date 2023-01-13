@@ -1,3 +1,7 @@
+*{
+    font-family: 'Righteous', cursive;
+}
+
 .presentation-container {
     width: 100%;
     height: 100vh;
@@ -11,7 +15,6 @@
     width: 35%;
     height: 95vh;
     perspective: 1000px;
-    filter: drop-shadow(2px 2px 5px rgb(134, 134, 134));
     margin: 0%;
     padding: 0%;
 }
@@ -26,25 +29,32 @@
     border: 2px solid pink;
 }
 
-.front {
-    width: 95%;
+.content {
+    border: 2px solid orange;
+    width: 90%;
     height: 30vh;
-    background: linear-gradient(-20deg, #00699e, #7ab7fc);
-    filter: drop-shadow(2px 2px 5px black);
-    backface-visibility: hidden;
     margin: auto;
     margin-top: 5vh;
+    border-radius: 15px;
+}
+
+.presentation {
+    width: 100%;
+    height: 30vh;
+    background: linear-gradient(-20deg, #005a86, #3b96ff);
+    filter: drop-shadow(2px 2px 5px rgb(134, 134, 134));
+    backface-visibility: hidden;
     border-radius: 15px;
     cursor: pointer;
     display: flex;
     flex-direction: row;
 }
 
-.front-img {
+.presentation-img {
     width: 35%;
 }
 
-.front-img img {
+.presentation-img img {
     width: 80%;
     height: 20vh;
     margin: 5vh 10% 5vh 10%;
@@ -53,29 +63,86 @@
     border-radius: 5%;
 }
 
-.front-rigth {
+.presentation-div-rigth {
     width: 65%;
     display: flex;
     flex-direction: column;
 
 }
 
-.front-text {
-    font-family: "Open Sans", sans-serif;
-    font-size: 1.2rem;
+.presentation-text {
+    font-size: 1.8rem;
     margin-top: 10%;
     color: white;
     text-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
 }
 
-.front-button {
+.presentation-button {
     width: 60%;
     margin: 1% 20% 5% 20%;
 }
 
-.front-button button {
+.presentation-button button{
     width: 75%;
     height: 8vh;
+}
+
+.detail{
+    width: 95%;
+    height: 30vh;
+    background: linear-gradient(-20deg, #005a86, #3b96ff);
+    filter: drop-shadow(2px 2px 5px rgb(134, 134, 134));
+    backface-visibility: hidden;
+    margin: auto;
+    margin-top: 5vh;
+    border-radius: 15px;
+    cursor: pointer;
+}
+
+.detail-info{
+    display: flex;
+    flex-direction: row;
+}
+
+.detail-img {
+    width: 35%;
+}
+
+.detail-img img {
+    width: 80%;
+    height: 20vh;
+    margin: 5vh 10% 5vh 10%;
+    font-size: 25px;
+    border: 2px solid #757575;
+    border-radius: 5%;
+}
+
+.detail-rigth {
+    width: 65%;
+    display: flex;
+    flex-direction: column;
+}
+
+.detail-text{
+    font-size: 1rem;
+    margin-top: 15%;
+    color: white;
+    text-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+}
+
+.detail-button {
+    width: 60%;
+    margin: 1% 20% 5% 20%;
+}
+
+.detail-button button{
+    width: 100%;
+    height: 6vh;
+}
+
+.transition{
+    transform: rotateY(180deg);
+    transition: 5ms;
 }
 
 /* .content_front {

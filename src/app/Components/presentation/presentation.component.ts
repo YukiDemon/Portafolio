@@ -7,9 +7,12 @@ import {ButtonModule} from 'primeng/button';
   styleUrls: ['./presentation.component.css']
 })
 export class PresentationComponent {
-  rotation : boolean = true;
 
-  rotate(){
-    this.rotation = !this.rotation;
+  showPresentation : boolean = true;
+  showDetail : boolean = false;
+
+  rotateCard(){
+    this.showPresentation = !this.showPresentation;
+    this.showDetail = !this.showDetail;
   }
 }
