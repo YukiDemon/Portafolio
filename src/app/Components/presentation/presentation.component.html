@@ -1,24 +1,31 @@
 <div class="presentation-container">
     <div class="card-rotate">
         <div class="card-rotate-content">
-            <div [ngClass]="{ content_front: rotation,  content_behind: !rotation}">
+            <div class="content">
                 <div class="front">
                     <div class="front-img">
                         <img src="https://pps.whatsapp.net/v/t61.24694-24/310632916_195291112973880_4648648487090972676_n.jpg?ccb=11-4&oh=01_AdT1ddqYokXJQG-TTxnLPXtMWEaBQF8EyQ9aks9pKANL-g&oe=63C72525"
                             alt="Logo Programador CS" class="logo" />
                     </div>
-                    <div class="front-button">
-                        <button (click)="rotate()" pButton pRipple type="button" label="VER PERFIL"
-                            class="p-button-rounded p-button-secondary"></button>
+                    <div class="front-rigth">
+                        <div class="front-text">
+                            <p>Bienvenido a mi portafolio</p>
+                        </div>
+                        <div class="front-button">
+                            <button (click)="rotate()" pButton pRipple type="button" label="VER PERFIL"
+                                class="p-button-rounded p-button-secondary"></button>
+                        </div>
                     </div>
                 </div>
-                <div>
-                    <img src="https://pps.whatsapp.net/v/t61.24694-24/310632916_195291112973880_4648648487090972676_n.jpg?ccb=11-4&oh=01_AdT1ddqYokXJQG-TTxnLPXtMWEaBQF8EyQ9aks9pKANL-g&oe=63C72525"
-                        alt="Logo Programador CS" class="logo" />
-                    <h1>Software Developer Junior</h1>
-                    <p>Guillermo Campos V&aacute;squez</p>
-                    <button>Conoce m&aacute;s</button>
-                </div>
+                <!-- <div class="back">
+                    <div class="back-info">
+                        <img src="https://pps.whatsapp.net/v/t61.24694-24/310632916_195291112973880_4648648487090972676_n.jpg?ccb=11-4&oh=01_AdT1ddqYokXJQG-TTxnLPXtMWEaBQF8EyQ9aks9pKANL-g&oe=63C72525"
+                            alt="Logo Programador CS" class="logo" />
+                        <h1>Software Developer Junior</h1>
+                        <p>Guillermo Campos V&aacute;squez</p>
+                        <button>Conoce m&aacute;s</button>
+                    </div>
+                </div> -->
             </div>
         </div>
     </div>
