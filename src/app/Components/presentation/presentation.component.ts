@@ -9,10 +9,12 @@ import {ButtonModule} from 'primeng/button';
 export class PresentationComponent {
 
   showPresentation : boolean = true;
-  showDetail : boolean = false;
+  showDetail : boolean = true;
+  transition : boolean = false
 
   rotateCard(){
     this.showPresentation = !this.showPresentation;
     this.showDetail = !this.showDetail;
+    this.transition = !this.transition;
   }
 }
