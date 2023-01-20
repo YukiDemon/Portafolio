@@ -1,0 +1,6 @@
+.content-container{
+    width: 100%;
+    height: 10vh;
+    visibility: hidden;
+    background-color: aqua;
+}
